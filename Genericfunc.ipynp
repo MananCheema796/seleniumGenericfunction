@@ -64,8 +64,6 @@ driver.get("https://www.linkedin.com/")
 
 with open('cookies.pk1', 'rb') as cookies_file:
     cookies = pickle.load(cookies_file)
-
-driver.get("https://www.linkedin.com/feed/")
 time.sleep(5)
 
 for cookie in cookies:
